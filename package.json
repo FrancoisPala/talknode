@@ -1,0 +1,22 @@
+{
+  "name": "talknode",
+  "version": "1.0.0",
+  "description": "1. First create an npm project with npm init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancoisPala/talknode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrancoisPala/talknode/issues"
+  },
+  "homepage": "https://github.com/FrancoisPala/talknode#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
