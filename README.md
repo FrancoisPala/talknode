@@ -85,3 +85,34 @@
     <script>
     var socket = io();
     </script>
+
+# lets switch to five
+
+10. let's add a disconnection event
+    io.on('connection', function(socket){
+        console.log('a user connected');
+        socket.on('disconnect', function(){
+            console.log('user disconnected');
+        });
+    });
+    in index.js
+    as well as
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+    $(function () {
+        var socket = io();
+        $('form').submit(function(){
+        socket.emit('chat message', $('#m').val());
+        $('#m').val('');
+        return false;
+        });
+    });
+    </script>
+    and replace the connection with
+    io.on('connection', function(socket){
+        socket.on('chat message', function(msg){
+            console.log('message: ' + msg);
+        });
+    });
+        
