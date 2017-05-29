@@ -115,4 +115,9 @@
             console.log('message: ' + msg);
         });
     });
-        
+
+# on to the last one
+
+11. let's try out all the new stuff
+
+12. deploy with now.sh 

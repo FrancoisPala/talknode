@@ -4,6 +4,7 @@
   "description": "1. First create an npm project with npm init",
   "main": "index.js",
   "scripts": {
+    "now-start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
