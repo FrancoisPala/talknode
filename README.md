@@ -57,3 +57,31 @@
     in index.html (to be created first)
 
 6. try it out
+
+# change for socket/four
+
+7. npm install --save socket.io
+
+8. lets add
+    var app = require('express')();
+    var http = require('http').Server(app);
+    var io = require('socket.io')(http);
+
+    app.get('/', function(req, res){
+    res.sendFile(__dirname + '/index.html');
+    });
+
+    io.on('connection', function(socket){
+    console.log('a user connected');
+    });
+
+    http.listen(3000, function(){
+    console.log('listening on *:3000');
+    });
+    in index.js
+
+9. and this before body in html
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+    var socket = io();
+    </script>
